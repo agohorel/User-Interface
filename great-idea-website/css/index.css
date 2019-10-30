@@ -149,6 +149,11 @@ h5 {
   margin-bottom: 15px;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 /* HEADER */
 
 hr {
@@ -164,16 +169,20 @@ hr {
 header {
   width: 100%;
   margin-top: 40px;
+  vertical-align: baseline;
 }
 
 nav {
   display: inline-block;
-  width: 60%;
+  width: 80%;
 }
 
 nav a {
-  text-decoration: none;
   color: grey;
+}
+
+nav a:hover {
+	color: black;
 }
 
 nav a:not(:last-of-type) {
@@ -181,7 +190,7 @@ nav a:not(:last-of-type) {
 }
 
 .logo {
-  float: right;
+  vertical-align: middle;
 }
 
 /* HERO */
@@ -192,16 +201,18 @@ nav a:not(:last-of-type) {
 
 .hero-col {
   display: inline-block;
-  width: 49%;
+  width: 49.5%;
 }
 
 .hero-text-container {
   text-align: center;
+  vertical-align: top;
+  padding-top: 50px;
 }
 
 .hero-title {
   font-family: "Bangers";
-  font-size: 64px;
+  font-size: 80px;
 }
 
 .hero img {
@@ -210,7 +221,17 @@ nav a:not(:last-of-type) {
 
 .btn {
   border: 1px solid black;
-  padding: 5px 40px;
+  padding: 5px 45px;
+  transition: .1s ease-out all;
+}
+
+.btn:hover {
+	background: #030303;
+	color: white;
+}
+
+.nudge-up {
+	padding-bottom: 20px;
 }
 
 /* DETAILS */
@@ -232,4 +253,14 @@ nav a:not(:last-of-type) {
 
 .middle-img {
 	width: 100%;
+}
+
+/* CONTACT/FOOTER */
+
+.contact-text {
+	line-height: 2;
+}
+
+.copyright {
+	text-align: center;
 }

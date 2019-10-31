@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed|Staatliches&display=swap");
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -136,7 +138,7 @@ table {
 html,
 body {
   height: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 h1,
@@ -144,21 +146,21 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Bangers", cursive;
+  font-family: "Staatliches", sans-serif;
   letter-spacing: 1px;
   margin-bottom: 15px;
 }
 
 a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 
 /* HEADER */
 
 hr {
-	color: #000;
-	margin-top: 25px;
+  color: #000;
+  margin-top: 25px;
 }
 
 .container {
@@ -168,8 +170,13 @@ hr {
 
 header {
   width: 100%;
-  margin-top: 40px;
   vertical-align: baseline;
+  background: #c3c3c3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 25%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 }
 
 nav {
@@ -178,11 +185,12 @@ nav {
 }
 
 nav a {
-  color: grey;
+  color: black;
+  vertical-align: middle;
 }
 
 nav a:hover {
-	color: black;
+  color: grey;
 }
 
 nav a:not(:last-of-type) {
@@ -196,7 +204,7 @@ nav a:not(:last-of-type) {
 /* HERO */
 
 .hero {
-  margin: 75px 0;
+  margin: 125px 0 75px 0;
 }
 
 .hero-col {
@@ -206,61 +214,90 @@ nav a:not(:last-of-type) {
 
 .hero-text-container {
   text-align: center;
-  vertical-align: top;
-  padding-top: 50px;
+  vertical-align: middle;
 }
 
 .hero-title {
-  font-family: "Bangers";
+  font-family: "Staatliches", sans-serif;
   font-size: 80px;
 }
 
-.hero img {
+/* .hero img {
   float: right;
+} */
+
+.hero-img {
+  display: inline-block;
+  width: 100%;
+  height: 379px;
+  background-image: url("../img/header-img.png");
+  background-repeat: no-repeat;
+  margin-left: 25%;
+  vertical-align: middle;
 }
 
 .btn {
+  display: inline-block;
   border: 1px solid black;
   padding: 5px 45px;
-  transition: .1s ease-out all;
+  transition: 0.1s ease-out all;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
-	background: #030303;
-	color: white;
+  animation: pulse 0.5s alternate infinite;
+  background: #030303;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.nudge-up {
-	padding-bottom: 20px;
+@keyframes pulse {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: #13bed4;
+  }
 }
 
 /* DETAILS */
 
 .details-item {
-	margin: 25px 0;
-	padding-right: 2%;
+  margin: 25px 0;
+  padding-right: 2%;
 }
 
 .details-item-half {
-	display: inline-block;
-	width: 49%;
+  display: inline-block;
+  width: 49%;
 }
 
 .details-item-third {
-	display: inline-block;
-	width: 32%;
+  display: inline-block;
+  width: 32%;
 }
 
-.middle-img {
+/* .middle-img {
 	width: 100%;
+} */
+
+.mid-image {
+  display: inline-block;
+  width: 100%;
+  height: 182px;
+  background-image: url("../img/mid-page-accent.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* CONTACT/FOOTER */
 
 .contact-text {
-	line-height: 2;
+  line-height: 2;
 }
 
 .copyright {
-	text-align: center;
+  text-align: center;
 }

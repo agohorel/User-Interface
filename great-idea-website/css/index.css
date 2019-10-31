@@ -171,7 +171,7 @@ hr {
 header {
   width: 100%;
   vertical-align: baseline;
-  background: #c3c3c3;
+  background: hsl(209, 86%, 48%);
   position: fixed;
   top: 0;
   left: 0;
@@ -185,12 +185,12 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: white;
   vertical-align: middle;
 }
 
 nav a:hover {
-  color: grey;
+  color: black;
 }
 
 nav a:not(:last-of-type) {
@@ -252,13 +252,17 @@ nav a:not(:last-of-type) {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.btn:active {
+	transform: translateY(1px);
+}
+
 @keyframes pulse {
   0% {
     color: white;
   }
 
   100% {
-    color: #13bed4;
+    color: hsl(209, 86%, 48%);;
   }
 }
 
@@ -290,6 +294,7 @@ nav a:not(:last-of-type) {
   background-image: url("../img/mid-page-accent.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 /* CONTACT/FOOTER */
@@ -300,4 +305,5 @@ nav a:not(:last-of-type) {
 
 .copyright {
   text-align: center;
+  margin-bottom: 100px;
 }
